@@ -24,6 +24,11 @@
 		847F38BD1925F1C20003C3EE /* TrialAndErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F38BC1925F1C20003C3EE /* TrialAndErrorTests.m */; };
 		847F38C81925F1EC0003C3EE /* CQMMetadataExtraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F38C71925F1EC0003C3EE /* CQMMetadataExtraction.m */; };
 		847F38C91925F1EC0003C3EE /* CQMMetadataExtraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F38C71925F1EC0003C3EE /* CQMMetadataExtraction.m */; };
+		847F38CB1925F6680003C3EE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847F38CA1925F6680003C3EE /* AssetsLibrary.framework */; };
+		84D9E0A7193C536E00E4F75A /* CQMDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E0A6193C536E00E4F75A /* CQMDelegateManager.m */; };
+		84D9E0A8193C536E00E4F75A /* CQMDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E0A6193C536E00E4F75A /* CQMDelegateManager.m */; };
+		84D9E0AB193C59D200E4F75A /* CQMNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E0AA193C59D200E4F75A /* CQMNSObject.m */; };
+		84D9E0AC193C59D200E4F75A /* CQMNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D9E0AA193C59D200E4F75A /* CQMNSObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		847F38BC1925F1C20003C3EE /* TrialAndErrorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrialAndErrorTests.m; sourceTree = "<group>"; };
 		847F38C61925F1EC0003C3EE /* CQMMetadataExtraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQMMetadataExtraction.h; sourceTree = "<group>"; };
 		847F38C71925F1EC0003C3EE /* CQMMetadataExtraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQMMetadataExtraction.m; sourceTree = "<group>"; };
+		847F38CA1925F6680003C3EE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		84D9E0A5193C536E00E4F75A /* CQMDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQMDelegateManager.h; sourceTree = "<group>"; };
+		84D9E0A6193C536E00E4F75A /* CQMDelegateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQMDelegateManager.m; sourceTree = "<group>"; };
+		84D9E0A9193C59D200E4F75A /* CQMNSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQMNSObject.h; sourceTree = "<group>"; };
+		84D9E0AA193C59D200E4F75A /* CQMNSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQMNSObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847F38CB1925F6680003C3EE /* AssetsLibrary.framework in Frameworks */,
 				847F38911925F1C00003C3EE /* CoreGraphics.framework in Frameworks */,
 				847F38931925F1C00003C3EE /* UIKit.framework in Frameworks */,
 				847F388F1925F1C00003C3EE /* Foundation.framework in Frameworks */,
@@ -107,6 +118,7 @@
 		847F388D1925F1C00003C3EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				847F38CA1925F6680003C3EE /* AssetsLibrary.framework */,
 				847F388E1925F1C00003C3EE /* Foundation.framework */,
 				847F38901925F1C00003C3EE /* CoreGraphics.framework */,
 				847F38921925F1C00003C3EE /* UIKit.framework */,
@@ -128,6 +140,8 @@
 				847F38951925F1C00003C3EE /* Supporting Files */,
 				847F38C61925F1EC0003C3EE /* CQMMetadataExtraction.h */,
 				847F38C71925F1EC0003C3EE /* CQMMetadataExtraction.m */,
+				84D9E0A9193C59D200E4F75A /* CQMNSObject.h */,
+				84D9E0AA193C59D200E4F75A /* CQMNSObject.m */,
 			);
 			path = TrialAndError;
 			sourceTree = "<group>";
@@ -139,6 +153,8 @@
 				847F38971925F1C00003C3EE /* InfoPlist.strings */,
 				847F389A1925F1C00003C3EE /* main.m */,
 				847F389C1925F1C10003C3EE /* TrialAndError-Prefix.pch */,
+				84D9E0A5193C536E00E4F75A /* CQMDelegateManager.h */,
+				84D9E0A6193C536E00E4F75A /* CQMDelegateManager.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -260,10 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D9E0A7193C536E00E4F75A /* CQMDelegateManager.m in Sources */,
 				847F389F1925F1C10003C3EE /* CQMAppDelegate.m in Sources */,
 				847F38C81925F1EC0003C3EE /* CQMMetadataExtraction.m in Sources */,
 				847F38A81925F1C10003C3EE /* CQMViewController.m in Sources */,
 				847F389B1925F1C00003C3EE /* main.m in Sources */,
+				84D9E0AB193C59D200E4F75A /* CQMNSObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				847F38BD1925F1C20003C3EE /* TrialAndErrorTests.m in Sources */,
+				84D9E0AC193C59D200E4F75A /* CQMNSObject.m in Sources */,
+				84D9E0A8193C536E00E4F75A /* CQMDelegateManager.m in Sources */,
 				847F38C91925F1EC0003C3EE /* CQMMetadataExtraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +499,7 @@
 				847F38C21925F1C20003C3EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		847F38C31925F1C20003C3EE /* Build configuration list for PBXNativeTarget "TrialAndErrorTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +508,7 @@
 				847F38C51925F1C20003C3EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,4 +10,6 @@
 
 @interface CQMViewController : UIViewController
 
+@property(nonatomic,readwrite,strong)UIButton* button;
+
 @end

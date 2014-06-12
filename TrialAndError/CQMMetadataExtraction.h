@@ -10,4 +10,7 @@
 
 @interface CQMMetadataExtraction : NSObject
 
+-(NSString*)exceptionTester;
+-(void)getImageMetadata;
+
 @end
